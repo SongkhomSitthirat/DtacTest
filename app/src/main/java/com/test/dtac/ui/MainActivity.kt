@@ -81,6 +81,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(MainViewMo
 
             override fun onError(error: FacebookException?) {
                 Log.d("Prew", "onError")
+                Log.d("Prew", error?.message ?: "")
             }
         })
     }
